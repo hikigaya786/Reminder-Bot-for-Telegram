@@ -1,4 +1,4 @@
 bot_venv
 Logs.txt
 config.py
-src/__pycache__/*
+src//__pycache__//*
