@@ -1,4 +1,4 @@
 bot_venv
 Logs.txt
 config.py
-__pycache__
+config.cpython-39.pyc
