@@ -1,4 +1,6 @@
 bot_venv
 Logs.txt
 config.py
+__pycache__/
+*.pyc
 
