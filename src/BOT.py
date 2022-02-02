@@ -1,13 +1,11 @@
 from ast import Call
+from distutils.command.config import config
 import re
 from telegram.ext import Updater, CallbackContext, CommandHandler
 from telegram import Update
 import logging
 from datetime import date, datetime, timedelta
 
-# Token = "5114922826:AAGME5_AJvsCVYoJRcXTLxURu61Puv15waQ"
-# updater = Updater(token=Token, use_context=True)
-# dispathcer = updater.dispatcher
 
 logging.basicConfig(filename="Logs.txt",
                     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO)
@@ -73,8 +71,9 @@ def help(update: Update, context: CallbackContext) -> None:
 
 
 def main():
+    import config
 
-    Token = "5114922826:AAGME5_AJvsCVYoJRcXTLxURu61Puv15waQ"
+    Token = config.Token
     updater = Updater(token=Token, use_context=True)
     dispathcer = updater.dispatcher
 
